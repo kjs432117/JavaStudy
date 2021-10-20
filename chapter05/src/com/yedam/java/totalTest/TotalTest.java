@@ -47,7 +47,7 @@ public class TotalTest {
 						c=scores[i];
 
 					a += scores[i];
-					b = (double)a/d;
+					b = a/d;
 				}
 				System.out.printf("최고 점수:%d\n",c);
 
