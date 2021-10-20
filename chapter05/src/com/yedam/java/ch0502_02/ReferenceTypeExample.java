@@ -60,8 +60,51 @@ public class ReferenceTypeExample {
 				
 			}
 		}
+		System.out.println("========================");
+		int[] temp = {89,90,93};
+		int[][] javaScores = { {95,80},{92,96,80}};
+		// { 1차원 배열, 1차원 배열}
+		// {95,80},{92,96,80}}
 		
-				
+		// -> {95,80} / {92,96,80}
+		for(int x=0; x< javaScores.length; x++)
+			//int[] java = javaScores[x];
+		for(int y=0; y<javaScores.length; y++) {
+			int ja = javaScores[x][y];
+			System.out.println(ja);
+		}
+		
+		int[] oldIntArray = {1,22,3};
+		int[] newIntArray = new int[5];
+		
+		for(int i=0; i<oldIntArray.length; i++) {
+			newIntArray[i] = oldIntArray[i];
+		}
+		
+		for(int i=0; i<newIntArray.length; i++) {
+			System.out.println(newIntArray[i]);
+		}
+		
+		// System/arraycopy();
+		String[] oldStrArray = {"java", "array", "copy"};
+		String[] newStrArray = new String[5];
+		
+		System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
+	      
+		for(int i=0; i<newStrArray.length; i++) {
+		 System.out.println(newStrArray[i]);
+		}
+		
+		 // 합과 평균 구하기
+		int[] scoresList = {95, 71, 84, 93, 87};
+		int sum = 0;
+		for(int score : scoresList) {  //scoreList부터
+			System.out.println(score);
+			sum += score;
+		}
+		System.out.println("총 합: " + sum);
+		double avg = (double) sum / scoresList.length;
+		System.out.println("평균 : " + avg);
 				
 				
 		
