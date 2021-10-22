@@ -1,4 +1,4 @@
-package com.yedam.java.cha0601;
+package com.yedam.java.ch0601;
 
 public class Car {
 	//필드
